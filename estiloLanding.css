@@ -1,0 +1,49 @@
+@font-face{
+    src: url(fonts//ChelseaMarket-Regular.ttf);
+    font-family: ChelseaMarket;
+}
+body{
+    margin: 0;
+    background-color: #434343;
+}
+
+.containerMain{
+    display: block;
+    height: 1200px;
+    width: 100%;
+}
+.containerEslogan{
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+
+.eslogan {
+    font-family: ChelseaMarket;
+    font-size: 200% ;
+    font-weight: normal;
+    color:rgb(255, 255, 255);    
+}
+
+.prueba{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    align-items: center;
+}
+.prueba> img{
+    height: 350px;
+    width: 60%;
+    border-radius: 10px;
+}
+.containerCarrusel{
+    height: 480px;
+
+}
+
+.containerCarrusel>img {
+    height: 90%;
+    width: 100%;
+    padding: 0px 10px;
+}

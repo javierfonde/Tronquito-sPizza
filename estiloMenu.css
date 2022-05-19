@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background-color: #434343;
+}
+
+.containerMain{
+    display: block;
+    height: 1200px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: KaiseiOpti-Medium;
+    src: url(fonts/KaiseiOpti-Medium.ttf);
+}
+.tituloMenu{
+    font-family: KaiseiOpti-Medium;
+    display: flex;
+    justify-content: center;
+    font-weight: 30;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-block-end: 0;
+}
+
+hr {
+    background-color:#FFB205 ;
+    border: none;
+    height: 1.5px;
+    margin-bottom: 50px;
+}
+
+.gridMain{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 50px;
+}
+
+.gridMain>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2, 1fr) ;
+}
+
+#gridMain .itemA>img{
+    width: 50px;
+    height: 50px;
+}
+

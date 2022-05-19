@@ -1,0 +1,79 @@
+
+header {
+    background: url(img/cabecera.jpg);
+    background-size:cover;
+    width: 100%;
+}
+
+@font-face {
+    font-family: Kanit-Medium;
+    src: url(fonts/Kanit-Medium.ttf);
+}
+
+nav#Header a {
+    font-family: Kanit-Medium;
+    font-weight: 100;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 30px;
+
+}
+
+
+nav#Header a:hover {
+    color: #FFD706;
+}
+
+
+.container {
+    display: flex;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerContainer>div {
+    width: 100%;
+}
+
+.contentLeft {
+    display: flex;
+    align-items: center;
+}
+
+.contentLeft>img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.contentRight {
+    padding-right: 100px;
+    justify-content: flex-end;
+}
+
+
+@font-face{
+    src: url(fonts/Kanit-Regular.ttf);
+    font-family: Kanit-Regular;
+}
+.textoInicio {
+    background-color: rgba(63, 61, 61, 1);
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-family: Kanit-Regular;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-decoration: none;
+    transition:all 250ms;
+    box-shadow: none;
+}
+
+.textoInicio:hover{
+    box-shadow:  0 0 2em rgba(110, 110, 109, 0.568);
+    background-color: rgb(88, 88, 88);
+}

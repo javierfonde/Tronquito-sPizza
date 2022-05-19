@@ -1,0 +1,86 @@
+.footContainer {
+  background-color: #2D2D2D;
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+}
+
+#mainFooter .content {
+  display: flex;
+  width: 100%;
+
+}
+
+#mainFooter .content>div {
+  width: 100%;
+}
+
+#mainFooter .content .footText {
+  display: flex;
+  justify-content: center;
+  color: #CDCDCD;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+#mainFooter .content .mailBox {
+  display: flex;
+  align-items: flex-end;
+}
+
+#mainFooter .content .mailBox .footText {
+  padding-left: 15px;
+}
+
+
+#mainFooter .content .redesBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#mainFooter .content .redesBox .footText {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+#mainFooter .content .redesBox .redSocial {
+  display: flex;
+  padding: 10px;
+}
+
+#mainFooter .content .redesBox .redSocial a {
+  color: #CDCDCD;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+#mainFooter .content .logoBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logoBox>img {
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;  
+  background-color: #1E1E1E;
+  padding: 15px;
+
+}
+
+.copyrightText{
+  color:#CDCDCD;
+  font-size: 15px;
+  
+}
