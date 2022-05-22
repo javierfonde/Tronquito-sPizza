@@ -1,0 +1,2 @@
+-Pagina responsive
+-Bootstrap
