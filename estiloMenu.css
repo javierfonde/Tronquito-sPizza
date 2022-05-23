@@ -3,9 +3,9 @@ body{
     background-color: #434343;
 }
 
-.containerMain{
+.mainContainer{
     display: block;
-    height: 1200px;
+    height:fit-content;
     width: 100%;
 }
 
@@ -26,26 +26,66 @@ body{
 hr {
     background-color:#FFB205 ;
     border: none;
-    height: 1.5px;
-    margin-bottom: 50px;
+    height: 2px;
 }
 
-.gridMain{
+.gridMain { 
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 20px;
     grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 50px;
+    padding: 30px;
 }
 
-.gridMain>div{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows:repeat(2, 1fr) ;
+.gridMain .celdaPizza {
+    display: flex;
+    
 }
 
-#gridMain .itemA>img{
-    width: 50px;
-    height: 50px;
+.gridMain .celdaPizza .fotoPizza{
+    width: 60%;
+      
 }
 
+.gridMain .celdaPizza .fotoPizza>img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.gridMain .celdaPizza .infoPizza{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+
+@font-face {
+    font-family: Jost-SemiBold;
+    src: url(fonts/Jost-SemiBold.ttf);
+}
+
+.gridMain .celdaPizza .infoPizza .nombrePizza{
+    display: flex;
+    font-size:xx-large;
+    font-family: Jost-SemiBold;
+    color:rgba(255, 255, 255, 0.877) ;
+    margin: 0%;
+    text-decoration: underline
+
+}
+@font-face {
+    font-family: Jost-Regular;
+    src: url(fonts/Jost-Regular.ttf);
+}
+
+.gridMain .celdaPizza .infoPizza .descripcionPizza{
+    display: flex;
+    font-size:xx-large;
+    margin: 0;
+    font-family: Jost-Regular;
+    color: rgba(255, 255, 255, 0.829);
+    max-width: 40%;
+
+}

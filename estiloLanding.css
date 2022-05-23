@@ -7,8 +7,9 @@ body{
     background-color: #434343;
 }
 
-.containerMain{
-    display: block;
+.mainContainer{
+    display: flex;
+    flex-direction: column;
     height: 1200px;
     width: 100%;
 }
