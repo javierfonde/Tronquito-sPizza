@@ -2,3 +2,62 @@ body{
     margin: 0;
     background-color: #434343;
 }
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.mainContainer .direccionContainer{
+    display: flex;
+    padding-inline-start: 50px;
+}
+
+@font-face {
+    font-family: KaiseiOpti-Regular;
+    src: url(fonts/KaiseiOpti-Regular.ttf);
+}
+.mainContainer .direccionContainer .textoDireccion{
+    font-family: KaiseiOpti-Regular;
+    text-decoration: underline;
+    color: white;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.mainContainer .localContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer .localContainer .mapaContainer{
+    display: flex;
+    padding-inline-end: 30px;
+    width: fit-content;
+}
+.mainContainer .localContainer .horariosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContainer .localContainer .horariosContainer .tituloHorarios{
+    list-style: none;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+  
+    font-weight: 100;
+    font-size: 32px;
+    margin: 0px;
+}
+
+.mainContainer .localContainer .horariosContainer .textoHorarios{
+    list-style: none;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: 30px;
+}
