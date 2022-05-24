@@ -6,7 +6,7 @@ body{
 .mainContainer{
     display: flex;
     flex-direction: column;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .mainContainer .direccionContainer{
@@ -48,7 +48,6 @@ body{
     color: white;
     text-align: center;
     text-decoration: underline;
-  
     font-weight: 100;
     font-size: 32px;
     margin: 0px;
@@ -60,4 +59,22 @@ body{
     text-align: center;
     padding: 4px;
     font-size: 30px;
+}
+.mainContainer .containerEslogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+}
+@font-face{
+    src: url(fonts//ChelseaMarket-Regular.ttf);
+    font-family: ChelseaMarket;
+}
+
+.mainContainer .containerEslogan .eslogan {
+    font-family: ChelseaMarket;
+    font-size: 300% ;
+    font-weight: normal;
+    color:rgb(255, 255, 255);    
 }
