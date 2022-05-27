@@ -1,2 +1,3 @@
 -Pagina responsive
 -Bootstrap
+-Agregar con javascript que cuando se envie un formulario, aparezca un cartel de alerta de que el formulario fue enviado
