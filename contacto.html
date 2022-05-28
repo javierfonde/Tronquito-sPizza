@@ -8,7 +8,7 @@
     <title>Tronquito's</title>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="estiloLanding.css">
+    <link rel="stylesheet" href="estiloContacto.css">
     <script src="https://kit.fontawesome.com/167eafa796.js" crossorigin="anonymous"></script>
 
 </head>
@@ -48,8 +48,25 @@
 
     </header>
     <!-- Container Main -->
-    <div class="containerMain">
-        
+    <div class="mainContainer">
+        <div class="containerEslogan">
+            <h1 class="eslogan">Podés enviarnos tu opinión, sugerencias o consultas a través del formulario de contacto.</h1>
+        </div>
+        <div class="formularioContainer">
+            <form class="datosContainer" action="mailto:someone@example.com" >
+                <input type="text" name="nombre" id="get-name" value="Nombre" onfocus="this.value=''" >
+                <input type="text" name="telefono" id="get-telefono" value="11-2158-1234" onfocus="this.value=''" >
+                <input type="text" name="correo" id="get-correo" value="Correo" onfocus="this.value=''" >
+            </form>
+            
+            <form class="mensajeContainer" action="" >
+                <textarea class="mensaje" name="mensaje" id="get-mensaje" maxlength="1080" onfocus="this.value=''"  >Mensaje</textarea>
+            </form>
+            <div class="botonContainer">
+                <input type="submit" value="Enviar">
+            </div>
+
+        </div>
     </div>
 
     <!--Comienza pie, lo debo dividir en 3-->
