@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
-    height: 1500px;
+    height: fit-content;
 }
 
 .mainContainer .containerEslogan{
@@ -23,7 +23,7 @@ body{
 
 .mainContainer .containerEslogan .eslogan {
     font-family: ChelseaMarket;
-    font-size: 300% ;
+    font-size: 200% ;
     text-align: center;
     font-weight: normal;
     color:rgb(255, 255, 255);    
@@ -32,13 +32,13 @@ body{
 .mainContainer .formularioContainer{
     display: flex;
     flex-direction: column;
-    height: 30%;
+    height: 40em;
 }
 
 .mainContainer .formularioContainer .datosContainer{
     display: flex;
     justify-content: space-around;
-    margin-inline:10%;;    
+    margin-inline:15%;;    
 }
 
 @font-face{
@@ -47,11 +47,11 @@ body{
 }
 .mainContainer .formularioContainer .datosContainer>input{
     font-family: Kanit-Regular;
-    border-radius: 5px;
+    border-radius: 10px;
     padding-inline-start: 10px;
     color: #000000;
     background-color: #C4C4C4;
-    width: 299px;
+    width: 300px;
     height: 50px;
     font-size: 20px;
 }
@@ -60,17 +60,17 @@ body{
     display: flex;
     justify-content: center;
     height: 50%;
-    padding: 20px;
+    padding: 40px 0px;
 }
 
 .mainContainer .formularioContainer .mensajeContainer >textarea{
     font-family: Kanit-Regular;
     padding-inline-start: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #000000;
     background-color: #C4C4C4;
     font-size: 20px;
-    width: 80%;
+    width: 60%;
 }
 
 .mainContainer .formularioContainer .botonContainer{

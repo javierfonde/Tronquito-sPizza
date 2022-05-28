@@ -10,7 +10,30 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="estiloContacto.css">
     <script src="https://kit.fontawesome.com/167eafa796.js" crossorigin="anonymous"></script>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+        width: 20px;
 
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #888;
+
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        }
+    </style>
 </head>
 
 
@@ -54,13 +77,13 @@
         </div>
         <div class="formularioContainer">
             <form class="datosContainer" action="mailto:someone@example.com" >
-                <input type="text" name="nombre" id="get-name" value="Nombre" onfocus="this.value=''" >
-                <input type="text" name="telefono" id="get-telefono" value="11-2158-1234" onfocus="this.value=''" >
-                <input type="text" name="correo" id="get-correo" value="Correo" onfocus="this.value=''" >
+                <input type="text" name="nombre" id="get-name" placeholder="Nombre" >
+                <input type="text" name="telefono" id="get-telefono" placeholder="11-2158-1234"  >
+                <input type="text" name="correo" id="get-correo" placeholder="Correo" >
             </form>
             
             <form class="mensajeContainer" action="" >
-                <textarea class="mensaje" name="mensaje" id="get-mensaje" maxlength="1080" onfocus="this.value=''"  >Mensaje</textarea>
+                <textarea class="mensaje" name="mensaje" id="get-mensaje" placeholder="Mensaje" ></textarea>
             </form>
             <div class="botonContainer">
                 <input type="submit" value="Enviar">
