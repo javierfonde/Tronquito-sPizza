@@ -75,22 +75,30 @@
         <div class="containerEslogan">
             <h1 class="eslogan">Podés enviarnos tu opinión, sugerencias o consultas a través del formulario de contacto.</h1>
         </div>
-        <div class="formularioContainer">
-            <form class="datosContainer" action="mailto:someone@example.com" >
-                <label for="fname" style="display: none">First name:</label>
-                <input type="text" name="nombre" id="get-name" placeholder="Nombre" >
-                <input type="text" name="telefono" id="get-telefono" placeholder="11-2158-1234"  >
-                <input type="text" name="correo" id="get-correo" placeholder="Correo" >
-            </form>
+
+        <form class="formularioContainer">
+            <div class="datosContainer" >
+                <label for="nombre" style="display: none">Nombre y Apellido:</label>
+                <input type="text" name="nombre" id="getNombre" placeholder="Nombre y Apellido" >
+
+                <label for="telefono" style="display: none">Telefono: </label>
+                <input type="text" name="telefono" id="getTelefono" placeholder="11-2158-1234"  >
+
+                <label for="correo" style="display: none">Correo: </label>
+                <input type="text" name="correo" id="getCorreo" placeholder="Correo" >
+            </div>
             
-            <form class="mensajeContainer" action="" >
-                <textarea class="mensaje" name="mensaje" id="get-mensaje" placeholder="Mensaje" ></textarea>
-            </form>
-            <div class="botonContainer">
-                <input type="submit" value="Enviar">
+            <div class="mensajeContainer" >
+                <textarea class="mensaje" name="mensaje" id="getMensaje" placeholder="Escriba su mensaje" ></textarea>
             </div>
 
-        </div>
+            <div class="botonContainer">
+                <input type="submit" id=""value="Enviar">
+                <button type="button" id="envioDato">Enviar</button>
+            </div>
+
+        </form>
+        <script src="form.js"></script>
     </div>
 
     <!--Comienza pie, lo debo dividir en 3-->
@@ -120,6 +128,9 @@
         </div>
 
     </footer>
+    
+
+    </script>
 </body>
 
 </html>
