@@ -5,22 +5,22 @@ function paginaCargada()
     // Evento que captura el envio del formulario
     var boton = document.getElementById("envioDato");
     boton.onclick = validarFormulario;
-    // Una vez capputa que boton debe leer, cuando se haga click este llama a la funcion ValidarFormulario.
+    // Una vez captura que boton debe leer, cuando se haga click este llama a la funcion ValidarFormulario.
 }
 
 function validarFormulario()
 {
     var nombre = document.getElementById("getNombre");
-    if(nombre.length == 0)
+    if(nombre.value=='')
     {
       alert("Ingrese nombre");
       return;
     }
     var telefono = document.getElementById("getTelefono");
     var correo = document.getElementById("getCorreo");
-    if(telefono.length == 0 || correo.length==0 )
+    if(telefono.value=='' && correo.value=='' )
     {
-      alert("Ingrese medio de contacto");
+      alert("Ingrese algu n medio de contacto");
       return;
     }
 
@@ -30,6 +30,4 @@ function validarFormulario()
       alert("Ingrese mensaje");
       return;
     }
-    var formulario = document.getElementById("respuesta");
-    formulario.submit();
 }
