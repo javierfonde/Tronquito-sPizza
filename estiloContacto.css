@@ -94,7 +94,7 @@ body{
 }
 
 .mainContainer .formularioContainer .botonContainer>input:hover{
-    box-shadow: 0 0 2em rgb(46 45 45 / 82%);
+    box-shadow: 0 0 2em rgb(89 88 88 / 44%);
     background-color: rgb(131 126 126);
     cursor: pointer;
 }

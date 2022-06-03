@@ -80,3 +80,61 @@ nav#Header a:hover {
     box-shadow:  0 0 2em rgba(110, 110, 109, 0.568);
     background-color: rgb(88, 88, 88);
 }
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  right: 15px;
+  border: 1px solid #aaaaaa;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.formContainer {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(5 5 5 / 95%);
+  
+}
+
+.formContainer>h1 {
+    display: flex;
+    justify-content: center;
+    color: #dfdfdf;
+}
+
+.formContainer>label {
+    color:#dfdfdf;
+}
+
+
+.formContainer input[type=text], .formContainer input[type=password] {
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for the submit/login button */
+.formContainer .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.formContainer .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.formContainer .btn:hover {
+  opacity: 1;
+}

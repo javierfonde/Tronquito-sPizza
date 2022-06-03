@@ -61,9 +61,25 @@
             <div class="container contentRight">
 
                 <div class="botonInicio">
-                    <a href="incioSesion.html" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</a>
+                    <button onclick="openForm()" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</button>
                 </div>
 
+                <div class="form-popup" id="myForm">
+                    <form class="formContainer">
+                      <h1 >Iniciar Sesion</h1>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Correo electrónico" name="email" required>
+                  
+                      <label for="psw"><b>Contraseña</b></label>
+                      <input type="password" placeholder="Contraseña" name="psw" required>
+                  
+                      <button type="submit" class="btn">Iniciar</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+                    </form>
+                    <script src="header,js"></script>
+                </div>
+                  
             </div>
 
         </div>
