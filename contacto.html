@@ -63,29 +63,31 @@
                 <div class="botonInicio">
                     <button onclick="openForm()" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</button>
                 </div>
-
-                <div class="form-popup" id="myForm">
-                    <form class="formContainer">
-                      <h1 >Iniciar Sesion</h1>
-                  
-                      <label for="email"><b>Email</b></label>
-                      <input type="text" placeholder="Correo electrónico" name="email" required>
-                  
-                      <label for="psw"><b>Contraseña</b></label>
-                      <input type="password" placeholder="Contraseña" name="psw" required>
-                  
-                      <button type="submit" class="btn">Iniciar</button>
-                      <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
-                    </form>
-                    <script src="header,js"></script>
-                </div>
-                  
+                                  
             </div>
 
         </div>
 
 
     </header>
+
+    <div class="mainFormPopup" id="mainMyForm">
+        <div class="form-popup" id="myForm">
+            <form class="formContainer">
+              <h1 >Iniciar Sesion</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Correo electrónico" name="email" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Contraseña" name="psw" required>
+          
+              <button type="submit" class="btn">Iniciar</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+            </form>
+            <script src="header.js"></script>
+        </div>
+    </div>
     <!-- Container Main -->
     <div class="mainContainer">
         <div class="containerEslogan">
@@ -101,7 +103,7 @@
                 <input type="text" name="telefono" id="getTelefono" placeholder="11-2158-1234"  >
 
                 <label for="correo" style="display: none">Correo: </label>
-                <input type="text" name="correo" id="getCorreo" placeholder="Correo" >
+                <input type="text" name="correo" id="getCorreo" placeholder="CORREO" style="text-transform: none">
             </div>
             
             <div class="mensajeContainer" >
