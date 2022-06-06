@@ -25,7 +25,7 @@
 #mainFooter .content .mailBox {
   display: flex;
   align-items: flex-end;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 #mainFooter .content .redesBox {
@@ -33,7 +33,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 #mainFooter .content .redesBox .footText {
@@ -62,11 +61,11 @@
 }
 
 
-.logoBox>img {
+#mainFooter .content .logoBox>img {
   width: 80px;
 }
 
-.copyright{
+#mainFooter .copyright{
   display: flex;
   justify-content: center;  
   background-color: #1E1E1E;
@@ -74,7 +73,32 @@
 
 }
 
-.copyrightText{
+#mainFooter .copyright .copyrightText{
   color:#CDCDCD;
   font-size: 20px;
 }
+
+@media (max-width:768px){
+  #mainFooter .content .redesBox {
+    flex-direction: none;
+    padding-inline-start: 20px;
+  }
+
+  #mainFooter .content .footText{
+    font-size: 1rem;
+  }
+  #mainFooter .content .redesBox .footText{
+    font-size: 0;
+  }
+
+  #mainFooter .content .redesBox .redSocial a {
+    font-size: 2rem;
+  }
+
+  #mainFooter .content .logoBox>img {
+    width: 60px;
+  }
+  #mainFooter .copyright .copyrightText {
+    font-size: 1rem;
+  }
+} 

@@ -32,7 +32,6 @@ hr {
 .gridMain { 
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 20px;
     grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 50px;
     padding: 30px;
@@ -51,7 +50,6 @@ hr {
     width: 100%;
     border-radius: 10px;
 }
-
 
 .gridMain .celdaPizza .infoPizza{
     display: flex;
@@ -120,7 +118,7 @@ hr {
     color: rgba(255, 255, 255, 0.829);
 }
 
-@media (max-width:767px){
+@media (max-width:768px){
     .tituloMenu {
         font-family: KaiseiOpti-Medium;
         display: flex;
@@ -135,8 +133,9 @@ hr {
         display: flex;
         flex-direction: column;
         padding: 0;
+        margin-block-start: 30px;
         grid-row-gap: 50px;
-        margin-inline-start: 10%;
+       
     }
     .gridMain .celdaPizza .infoPizza .nombrePizza{
         font-size:1.2rem;
@@ -146,15 +145,23 @@ hr {
         font-size:1rem;
         max-width:none;
     }
+
+    .gridMain .celdaPizza .fotoPizza>img {
+        width: 170px;
+    }
+
     .postresContainer{
         flex-direction: column;
+        padding: 0px;
+        margin-inline-start: 10%;
     }
     .celdaPostre{
-        display: flex;
         flex-direction: row;
-        align-items: center;
         width: 100%;
-        padding: 15px;
+        padding: 15px 0px;
+    }
+    .postresContainer .celdaPostre .fotoPostre>img {
+        width: 170px;
     }
 
     .postresContainer .celdaPostre .nombrePostre{
@@ -164,6 +171,5 @@ hr {
         padding-inline-start: 10px;       
     }
 
-    
 }
 
