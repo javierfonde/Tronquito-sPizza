@@ -20,14 +20,17 @@ function validarFormulario()
     var correo = document.getElementById("getCorreo");
     if(telefono.value=='' && correo.value=='' )
     {
-      alert("Ingrese algu n medio de contacto");
+      alert("Ingrese algún medio de contacto");
       return;
     }
 
     var mensaje=document.getElementById("getMensaje");
-    if(mensaje.length == 0)
+    if(mensaje.value=='')
     {
       alert("Ingrese mensaje");
       return;
     }
+    
+
+    alert("Gracias por su ayuda!");
 }
