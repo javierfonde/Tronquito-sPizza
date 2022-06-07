@@ -118,7 +118,7 @@ hr {
     color: rgba(255, 255, 255, 0.829);
 }
 
-@media (max-width:768px){
+@media (max-width:480px){
     .tituloMenu {
         font-family: KaiseiOpti-Medium;
         display: flex;
@@ -169,6 +169,35 @@ hr {
         font-size:1rem;
         width: 40%;
         padding-inline-start: 10px;       
+    }
+
+}
+
+@media (max-width:768px){
+    .gridMain {
+        margin-inline-start: 0; 
+    }
+    .gridMain .celdaPizza .infoPizza .nombrePizza{
+        font-size:1.2rem;
+    }
+
+    .gridMain .celdaPizza .infoPizza .descripcionPizza{
+        font-size:1rem;
+        max-width:none;
+    }
+
+    .gridMain .celdaPizza .fotoPizza>img {
+        width: 170px;
+    }
+
+    .postresContainer .celdaPostre .fotoPostre {
+        width: auto;
+    }
+    .postresContainer .celdaPostre .fotoPostre>img {
+        width: 170px;
+    }
+    .postresContainer .celdaPostre .nombrePostre{
+        font-size:1rem;
     }
 
 }
