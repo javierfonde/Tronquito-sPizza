@@ -118,7 +118,7 @@ hr {
     color: rgba(255, 255, 255, 0.829);
 }
 
-@media (max-width:480px){
+@media (max-width:700px){
     .tituloMenu {
         font-family: KaiseiOpti-Medium;
         display: flex;
@@ -135,6 +135,7 @@ hr {
         padding: 0;
         margin-block-start: 30px;
         grid-row-gap: 50px;
+        padding-inline-start: 10%;
        
     }
     .gridMain .celdaPizza .infoPizza .nombrePizza{
@@ -173,7 +174,7 @@ hr {
 
 }
 
-@media (max-width:1020px){
+@media (max-width:1200px){
     .gridMain {
         margin-inline-start: 0; 
     }
