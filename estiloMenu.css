@@ -173,7 +173,7 @@ hr {
 
 }
 
-@media (max-width:768px){
+@media (max-width:1020px){
     .gridMain {
         margin-inline-start: 0; 
     }
