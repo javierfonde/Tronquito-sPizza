@@ -16,7 +16,7 @@ body{
 .containerEslogan{
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .eslogan {
@@ -26,24 +26,25 @@ body{
     color:rgb(255, 255, 255);    
 }
 
-.prueba{
+.promoContainer{
     display: flex;
     justify-content: center;
     margin: 60px;
     align-items: center;
 }
-.prueba> img{
+.promoContainer> img{
     height: 350px;
     width: 60%;
     border-radius: 10px;
 }
 .containerCarrusel{
     height: 480px;
-
+    display: flex;
+    justify-content: center;
 }
 
 .containerCarrusel>img {
     height: 90%;
-    width: 100%;
-    padding: 0px 10px;
+    width: 90%;
+    border-radius: 10px;
 }

@@ -79,7 +79,7 @@ body{
     color:rgb(255, 255, 255);    
 }
 
-@media (max-width:768px){
+@media (max-width:700px){
     .mainContainer .direccionContainer {
         padding-inline-start:0px;
         justify-content: center;    
@@ -96,8 +96,8 @@ body{
     }
 
     .mainContainer .localContainer .mapaContainer{
-        padding-inline-end:none;
         justify-content: center;
+        padding-inline-end: 0px;
     }
 
     .mainContainer .localContainer .mapaContainer>iframe{
@@ -105,16 +105,11 @@ body{
         height: 300px;
     }
 
-    .mainContainer .localContainer .horariosContainer {
-        align-items: flex-start;
-    }
-    
     .mainContainer .localContainer .horariosContainer .tituloHorarios {
         font-size: 2rem;
         margin-top: 20px;
     }
     .mainContainer .localContainer .horariosContainer .textoHorarios {
-        text-align: left;
         font-size: 1.3rem;
     }
 
