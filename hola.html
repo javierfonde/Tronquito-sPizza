@@ -15,16 +15,14 @@
         .imagenPrueba{
             width: 150px;
             position: absolute;
-            left: 0;
+            left: 100%;
             top: 0;
-            transition: all 2.5ms;
-            transform: translateX(100%);
-
+            transition: all 0.5s;
         }
 
-        #pizza1:checked + .imagenPrueba{
+        #pizza1:checked ~ .imagenPrueba{
             transform: translateX(-100%);
-            
+                
         }
 
     </style>

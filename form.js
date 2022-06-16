@@ -2,14 +2,17 @@ window.onload = paginaCargada;
 
 function paginaCargada()
 {
-    // Evento que captura el envio del formulario
-    var boton = document.getElementById("envioDato");
-    boton.onclick = validarFormulario;
-    // Una vez captura que boton debe leer, cuando se haga click este llama a la funcion ValidarFormulario.
+  
+  // Evento que captura el envio del formulario
+  const form= document.querySelector(".formularioContainer");
+  form.addEventListener("submit", validarFormulario, true); 
+  // Una vez que hago submit, valida por html que los campos que pido esten completos y correctos si es asi
+  // la accion submit finaliza dando entrada al evento en el addEventListener, luego llama a la funcion ValidarFormulario.
 }
 
 function validarFormulario()
 {
+    console.log("HOLA")
     var nombre = document.getElementById("getNombre");
     if(nombre.value=='')
     {

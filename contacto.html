@@ -59,7 +59,7 @@
 
         </div>
 
-        <div class="headerContainerResponsive">
+        <div class="headerContainerResponsive" style="display: none;">
             <div>
                 <img src="img\logo.png" alt="logo pizzeria">
             </div>
@@ -93,13 +93,13 @@
             <h1 class="eslogan">Podés enviarnos tu opinión, sugerencias o consultas a través del formulario de contacto.</h1>
         </div>
 
-        <form class="formularioContainer">
+        <form class="formularioContainer"  >
             <div class="datosContainer" >
                 <label for="nombre" style="display: none"  >Nombre y Apellido:</label>
                 <input type="text" name="nombre" id="getNombre"  placeholder="Nombre y Apellido" >
 
                 <label for="telefono" style="display: none">Telefono: </label>
-                <input type="text" name="telefono" id="getTelefono" placeholder="11-2158-1234"  >
+                <input type="tel" pattern="[0-9]{10}" name="telefono" id="getTelefono" placeholder="1121581234"  >
 
                 <label for="correo" style="display: none">Correo: </label>
                 <input type="text" name="correo" id="getCorreo" placeholder="CORREO" style="text-transform: none">
@@ -110,7 +110,7 @@
             </div>
 
             <div class="botonContainer">
-                <input type="submit" id="envioDato"value="Enviar">
+                <input type="submit" id="envioDato" value="Enviar">
             </div>
 
         </form>
