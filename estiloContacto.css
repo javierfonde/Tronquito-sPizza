@@ -98,7 +98,7 @@ body{
     cursor: pointer;
 }
 
-@media (max-width:700px){
+@media (max-width:1000px){
     .mainContainer .containerEslogan{
         padding: 25px 0px;    
     }
@@ -116,14 +116,14 @@ body{
 
     .mainContainer .formularioContainer .datosContainer> input, button {
     	margin: 5px;
-	    width: 90%;
+	    width: 80%;
     }
     .mainContainer .formularioContainer .mensajeContainer {
 	    width: 100%;
 	    padding: 20px 0px
     }
     .mainContainer .formularioContainer .mensajeContainer >textarea {
-	    width: 90%;
+	    width: 80%;
     	height: 15rem;
     }
 
