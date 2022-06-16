@@ -1,0 +1,24 @@
+containerEslogan:
+	    padding: 25px 0px;
+
+eslogan:
+	font-size: 1.2rem;
+	padding: 0px 30px;
+
+datosContainer:
+	flex-direction: column;
+    	/* margin-inline: 15%; */
+    	align-items: center;
+	width:100%
+
+.mainContainer .formularioContainer .datosContainer> input, button {
+	margin: 5px;
+	width: 90%
+
+.mainContainer .formularioContainer .mensajeContainer {
+	width: 100%;
+	padding: 20px 0px
+
+.mainContainer .formularioContainer .mensajeContainer >textarea {
+	width: 90%
+    	height: 15rem;
