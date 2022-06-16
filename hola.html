@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            position: relative;
+        }
+
+        .imagenPrueba{
+            width: 150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 2.5ms;
+            transform: translateX(100%);
+
+        }
+
+        #pizza1:checked + .imagenPrueba{
+            transform: translateX(-100%);
+            
+        }
+
+    </style>
 </head>
 <body>
+
     <form style= "display:flex; flex-direction: column; padding: 10px">
-        <div style="display: flex;align-items: center;padding: 10px;" >
+        <div style="display: flex;align-items: center;padding: 10px 0px;" >
             <input type="checkbox" id="pizza1" name="pizza1" value="Margarita">
             
             <label for="pizza1">Pizza Margarita</label><br>
-            <img src="img/pizzaFlorida.png" alt="florida" style="width: 150px">
+            <img src="img/pizzaFlorida.png" alt="florida" class="imagenPrueba">
         </div>
         <div style="display: flex;align-items: center;padding: 10px;">
             <input type="checkbox" id="pizza2" name="pizza2" value="Pepperoni">
             
-            <label for="pizza2"> Pizza Pepperoni</label><br>
+            <label for="pizza2 "> Pizza Pepperoni</label><br>
             <img src="img/pizzaPepperoni.png" alt="" style="width: 150px">
         </div>
         
