@@ -1,7 +1,5 @@
 
 header {
-    background: url(img/cabecera.jpg);
-    background-size:cover;
     width: 100%;
     height: 8rem;
     display: flex;
@@ -28,11 +26,9 @@ nav#Header a:hover {
     list-style: none;
 }
 
-.container {
-    display: flex;
-}
-
 .headerContainer {
+    background: url(img/cabecera.jpg);
+    background-size:cover;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -43,26 +39,27 @@ nav#Header a:hover {
     width: 100%;
 }
 
-.contentLeft {
+.headerContainer .contentLeft {
     display: flex;
     align-items: center;
 }
 
-.contentLeft>img {
+.headerContainer .contentLeft>img {
     width: 7rem;
     padding: 10px;
 }
 
-.contentRight {
+.headerContainer .contentRight {
     padding-right: 100px;
     justify-content: flex-end;
+    display: flex;
 }
 
 @font-face{
     src: url(fonts/Kanit-Regular.ttf);
     font-family: Kanit-Regular;
 }
-.textoInicio {
+.headerContainer .contentRight .botonInicio .textoInicio {
     background-color: rgba(63, 61, 61, 1);
     padding: 6px 25px;
     border-radius: 10px;
@@ -74,9 +71,106 @@ nav#Header a:hover {
     box-shadow: none;
 }
 
-.textoInicio:hover{
+.headerContainer .contentRight .botonInicio .textoInicio:hover{
     box-shadow:  0 0 2em rgba(110, 110, 109, 0.568);
     background: rgba(0, 0, 0, 0.836);
+}
+
+/* HeaderResponsive, comienza ocultado */
+.headerContainerResponsive{
+    flex-direction: column;
+    background-size: cover;
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    
+    
+}
+.headerContainerResponsive .containerVisible{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    z-index: 99;
+    background-color:rgb(237, 176, 38);
+    
+}
+.headerContainerResponsive .containerVisible>div{
+    width: 100%;
+    z-index: 99;
+}
+
+.headerContainerResponsive .containerVisible .containerLogo{
+    display: flex;
+    width: 40%;
+}
+
+.headerContainerResponsive .containerVisible .containerLogo>img{
+    width: 70%;
+    padding: 5px 0px 0px 5px;
+}
+
+.headerContainerResponsive .containerVisible .containerHamburguesa{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+    width: 80%
+}
+.headerContainerResponsive .containerVisible .containerHamburguesa>i{
+    font-size: 2.5rem;
+}
+.headerContainerResponsive .containerDesplegable{
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(237, 176, 38);
+    width: 100%;
+    top: -200%;
+    z-index: 98;
+    transition: ease-in-out 0.25s;
+    
+}
+.headerContainerResponsive .containerDesplegable:focus{
+    background-color: #04AA6D;
+}
+.headerContainerResponsive .containerDesplegable .menuDesplegable{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 0px;
+}
+
+.headerContainerResponsive .containerDesplegable .menuDesplegable a{
+    font-family: Kanit-Medium;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 10px;
+    list-style: none;
+}
+.headerContainerResponsive .containerDesplegable .menuDesplegable li{
+    list-style: none;
+}
+
+.headerContainerResponsive .containerDesplegable .menuDesplegable a:hover {
+    color: #000000;
+    list-style: none;
+}
+
+.headerContainerResponsive .containerDesplegable .botonInicio{
+    display: flex;
+}
+
+.headerContainerResponsive .containerDesplegable .botonInicio .textoInicio{
+    width: 40%;
+    background-color: rgba(63, 61, 61, 1);
+    padding: 0px;
+    border-radius: 10px;
+    font-family: Kanit-Regular;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 250ms;
+    box-shadow: none;
 }
 
 /* form popup, comienza ocultado */
@@ -85,29 +179,29 @@ nav#Header a:hover {
   position: fixed;
   right: 15px;
   border: 1px solid #aaaaaa;
-  z-index: 9;
+  z-index: 100;
 }
 
 /*Container dentro, contiene el form*/
-.formContainer {
+.form-popup .formContainer {
   max-width: 300px;
   padding: 10px;
   background: rgb(4 14 3);  
 }
 
-.formContainer>h1 {
+.form-popup .formContainer>h1 {
     display: flex;
     justify-content: center;
     color: #dfdfdf;
     font-family: Kanit-Regular;
 }
 
-.formContainer>label {
+.form-popup .formContainer>label {
     color:#dfdfdf;
     font-family: system-ui;
 }
 
-.formContainer input[type=text], .formContainer input[type=password] {
+.form-popup .formContainer input[type=text], .formContainer input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -115,7 +209,7 @@ nav#Header a:hover {
 }
 
 /* Estilo para botenes de form */
-.formContainer .btn {
+.form-popup .formContainer .btn {
   background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
@@ -126,12 +220,26 @@ nav#Header a:hover {
   opacity: 0.8;
 }
 
-.formContainer .btn:hover {
+.form-popup .formContainer .btn:hover {
     opacity: 1;
   }
 
 /* Modifica el color del boton de cancelar*/
-.formContainer .cancel {
+.form-popup .formContainer .cancel {
   background-color: red;
+}
+
+@media (max-width:1000px){
+    header{
+        height: auto;
+    }
+
+    .headerContainer {
+        display: none;
+    }
+
+    .headerContainerResponsive{
+        display: flex;
+    }
 }
 

@@ -28,6 +28,7 @@
         background: #555;
         }
     </style>
+    <script src="contacto.js"></script>
 </head>
 
 
@@ -35,9 +36,9 @@
     <!-- Comienza la cabecera -->
     <header>
         <!-- creo un container que tendrá 2 containers a su vez. -->
-        <div class="container headerContainer">
+        <div class="headerContainer">
             <!-- Container con logo y botones de navegacion -->
-            <div class="container contentLeft">
+            <div class="contentLeft">
                 <img src="img\logo.png" alt="logo pizzeria">
 
                 <nav id="Header" class="container ">
@@ -49,10 +50,10 @@
 
             </div>
             <!-- Container de boton de iniciarSesion -->
-            <div class="container contentRight">
+            <div class="contentRight">
 
                 <div class="botonInicio">
-                    <button onclick="openForm()" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</button>
+                    <button  onclick="openForm()" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</button>
                 </div>
                                   
             </div>
@@ -60,10 +61,29 @@
         </div>
 
         <div class="headerContainerResponsive">
-            <div style="display: none;">
-                <img src="img\logo.png" alt="logo pizzeria">
+            <div class="containerVisible">
+                <div class="containerLogo">
+                    <img src="img\logo.png" alt="logo pizzeria">
+                </div>
+                <div class="containerHamburguesa">
+                    <button id="interruptor" class="closed" > <i class="fa-solid fa-bars"></i> </button>
+                    
+                </div>
+                
             </div>
-
+            <div id="desplegable" class="containerDesplegable">
+                <nav class="menuDesplegable">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="sucursal.html">SUCURSAL</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </nav>
+    
+                <div class="botonInicio">
+                    <button onclick="openForm()" class="textoInicio">Iniciar Sesion</button>
+                </div>
+            </div>
+            
         </div>
     
 
@@ -71,7 +91,7 @@
     </header>
 
     <div class="form-popup" id="myForm">
-        <form class="formContainer">
+        <form class="formContainer" onsubmit="iniciarSesion()">
           <h1 >Iniciar Sesion</h1>
       
           <label for="email"><b>Email</b></label>
@@ -83,7 +103,7 @@
           <button type="submit" class="btn">Iniciar</button>
           <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
         </form>
-        <script src="iniciar.js"></script>
+
     </div>
         
     
@@ -114,7 +134,7 @@
             </div>
 
         </form>
-        <script src="form.js"></script>
+
     </div>
 
     <!--Comienza pie, lo debo dividir en 3-->
