@@ -40,13 +40,17 @@
 <body>
     <!-- Comienza la cabecera -->
     <header>
-        <!-- creo un container que tendrá 2 containers a su vez. -->
-        <div class="container headerContainer">
-            <!-- Container con logo y botones de navegacion -->
-            <div class="container contentLeft">
-                <img src="img/logo.png" alt="logo pizzeria">
+        <!-- Habrán 2 headers, para pantallas chicas y pantalla grande -->
 
-                <nav id="Header" class="container ">
+
+        <!-- Header para pantallas grandes -->
+        <div class="headerContainer">
+            <!-- creo un container que tendrá 2 containers a su vez. -->
+            <!-- Container con logo y botones de navegacion -->
+            <div class="contentLeft">
+                <img src="img\logo.png" alt="logo pizzeria">
+
+                <nav id="Header" >
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="menu.html">MENU</a></li>
                     <li><a href="sucursal.html">SUCURSAL</a></li>
@@ -55,19 +59,59 @@
 
             </div>
             <!-- Container de boton de iniciarSesion -->
-            <div class="container contentRight">
+            <div class="contentRight">
 
                 <div class="botonInicio">
-                    <a href="#" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</a>
+                    <button  onclick="openForm()" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</button>
                 </div>
-
+                
+                                  
             </div>
 
         </div>
-
-
+        <!-- Header para pantallas chicas -->
+        <div class="headerContainerResponsive">
+            <div class="containerVisible">
+                <div class="containerLogo">
+                    <img src="img\logo.png" alt="logo pizzeria">
+                </div>
+                <div class="containerHamburguesa">
+                    <button onclick="accionarPersiana()" id="interruptor" class="closed" > <i class="fa-solid fa-bars"></i> </button>
+                </div>
+                
+                
+            </div>
+            <div id="desplegable" class="containerDesplegable">
+                <nav class="menuDesplegable">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="sucursal.html">SUCURSAL</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </nav>
+    
+                <div class="botonInicio">
+                    <button onclick="openForm()" class="textoInicio">Iniciar Sesion</button>
+                </div>
+            </div>
+            
+        </div>
     </header>
+     <!-- Contenedor de form para inicio de sesion -->
+     <div class="form-popup" id="myForm">
+        <form class="formContainer" onsubmit="iniciarSesion()">
+        <h1 >Iniciar Sesion</h1>
+  
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Correo electrónico" name="email" required>
+  
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Contraseña" name="psw" required>
+  
+        <button type="submit" class="btn">Iniciar</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+        </form>
 
+    </div>   
 
     <!-- Container Main, grilla de pizza y postres -->
     <div class="mainContainer">
@@ -212,5 +256,7 @@
 
     </footer>
 </body>
+    <script src="iniciar.js"></script>
+    <script src="desplegarNav.js"></script>
 
 </html>

@@ -13,38 +13,68 @@ body{
     height: fit-content;
     padding-bottom: 50px;
 }
-.containerEslogan{
+
+.mainContainer .promoContainer{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    align-items: center;
+}
+.mainContainer .promoContainer> img{
+    height: 350px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.mainContainer .containerEslogan{
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
 }
 
-.eslogan {
+.mainContainer .containerEslogan .eslogan {
     font-family: ChelseaMarket;
     font-size: 200% ;
     font-weight: normal;
     color:rgb(255, 255, 255);    
 }
 
-.promoContainer{
-    display: flex;
-    justify-content: center;
-    margin: 60px;
-    align-items: center;
-}
-.promoContainer> img{
-    height: 350px;
-    width: 60%;
-    border-radius: 10px;
-}
-.containerCarrusel{
+.mainContainer .containerCarrusel{
     height: 480px;
     display: flex;
     justify-content: center;
 }
 
-.containerCarrusel>img {
+.mainContainer .containerCarrusel>img {
     height: 90%;
     width: 90%;
     border-radius: 10px;
+}
+
+@media (max-width:700px){
+    .mainContainer .promoContainer{
+        margin: 20px;
+    }
+
+    .mainContainer .promoContainer> img {
+        height:auto;
+        width: 100%;
+    }
+
+    .mainContainer .containerEslogan{
+        padding-bottom: 10px;
+
+    }
+    .mainContainer .containerEslogan .eslogan{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .mainContainer .containerCarrusel{
+        height: 300px;
+    }
+    .mainContainer .containerCarrusel>img {
+        height: 80%;
+
+    }
 }

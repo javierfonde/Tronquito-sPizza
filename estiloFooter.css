@@ -63,6 +63,7 @@
 
 #mainFooter .content .logoBox>img {
   width: 80px;
+  
 }
 
 #mainFooter .copyright{
@@ -85,18 +86,19 @@
   }
 
   #mainFooter .content .footText{
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   #mainFooter .content .redesBox .footText{
     font-size: 0;
   }
 
   #mainFooter .content .redesBox .redSocial a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #mainFooter .content .logoBox>img {
-    width: 60px;
+    width: 65%;
+    padding: 5px;
   }
   #mainFooter .copyright .copyrightText {
     font-size: 1rem;

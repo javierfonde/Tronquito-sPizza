@@ -6,26 +6,6 @@ header {
     align-items: center;
 }
 
-@font-face {
-    font-family: Kanit-Medium;
-    src: url(fonts/Kanit-Medium.ttf);
-}
-
-nav#Header a {
-    font-family: Kanit-Medium;
-    font-weight: 100;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding-left: 30px;
-    list-style: none;
-}
-
-nav#Header a:hover {
-    color: #FFD706;
-    list-style: none;
-}
-
 .headerContainer {
     background: url(img/cabecera.jpg);
     background-size:cover;
@@ -37,6 +17,29 @@ nav#Header a:hover {
 
 .headerContainer>div {
     width: 100%;
+}
+
+/* Estilo para headerPantallasGrandes */
+@font-face {
+    font-family: Kanit-Medium;
+    src: url(fonts/Kanit-Medium.ttf);
+}
+.headerContainer .contentLeft nav{
+    display: flex;
+}
+.headerContainer .contentLeft nav#Header a {
+    font-family: Kanit-Medium;
+    font-weight: 100;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.headerContainer .contentLeft nav#Header a:hover {
+    color: #FFD706;
+    list-style: none;
 }
 
 .headerContainer .contentLeft {
@@ -78,6 +81,7 @@ nav#Header a:hover {
 
 /* HeaderResponsive, comienza ocultado */
 .headerContainerResponsive{
+    display: none;
     flex-direction: column;
     background-size: cover;
     justify-content: flex-start;
@@ -116,8 +120,11 @@ nav#Header a:hover {
     padding: 25px;
     width: 80%
 }
-.headerContainerResponsive .containerVisible .containerHamburguesa>i{
+.headerContainerResponsive .containerVisible .containerHamburguesa> button{
+    padding: 0px;
     font-size: 2.5rem;
+    background-color: transparent;
+    border-style: none;
 }
 .headerContainerResponsive .containerDesplegable{
     flex-direction: column;
@@ -158,6 +165,7 @@ nav#Header a:hover {
 
 .headerContainerResponsive .containerDesplegable .botonInicio{
     display: flex;
+    padding: 8px 0px;
 }
 
 .headerContainerResponsive .containerDesplegable .botonInicio .textoInicio{
@@ -171,6 +179,7 @@ nav#Header a:hover {
     text-decoration: none;
     transition: all 250ms;
     box-shadow: none;
+    margin-left:10px ;
 }
 
 /* form popup, comienza ocultado */

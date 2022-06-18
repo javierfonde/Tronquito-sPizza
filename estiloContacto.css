@@ -114,7 +114,7 @@ body{
 	    width:100% 
     }
 
-    .mainContainer .formularioContainer .datosContainer> input, button {
+    .mainContainer .formularioContainer .datosContainer> input{
     	margin: 5px;
 	    width: 80%;
     }

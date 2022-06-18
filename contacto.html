@@ -28,20 +28,23 @@
         background: #555;
         }
     </style>
-    <script src="contacto.js"></script>
 </head>
 
 
 <body>
     <!-- Comienza la cabecera -->
     <header>
-        <!-- creo un container que tendrá 2 containers a su vez. -->
+        <!-- Habrán 2 headers, para pantallas chicas y pantalla grande -->
+
+
+        <!-- Header para pantallas grandes -->
         <div class="headerContainer">
+            <!-- creo un container que tendrá 2 containers a su vez. -->
             <!-- Container con logo y botones de navegacion -->
             <div class="contentLeft">
                 <img src="img\logo.png" alt="logo pizzeria">
 
-                <nav id="Header" class="container ">
+                <nav id="Header" >
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="menu.html">MENU</a></li>
                     <li><a href="sucursal.html">SUCURSAL</a></li>
@@ -55,20 +58,21 @@
                 <div class="botonInicio">
                     <button  onclick="openForm()" class="textoInicio"> <i class="fa-regular fa-circle-user"></i> Iniciar Sesion</button>
                 </div>
-                                  
+                                                  
             </div>
 
         </div>
-
+        <!-- Header para pantallas chicas -->
         <div class="headerContainerResponsive">
             <div class="containerVisible">
                 <div class="containerLogo">
                     <img src="img\logo.png" alt="logo pizzeria">
                 </div>
                 <div class="containerHamburguesa">
-                    <button id="interruptor" class="closed" > <i class="fa-solid fa-bars"></i> </button>
+                    <button onclick="accionarPersiana()" id="interruptor" class="closed" > <i class="fa-solid fa-bars"></i> </button>
                     
                 </div>
+                
                 
             </div>
             <div id="desplegable" class="containerDesplegable">
@@ -85,11 +89,8 @@
             </div>
             
         </div>
-    
-
-
     </header>
-
+    <!-- Contenedor de form para inicio de sesion -->
     <div class="form-popup" id="myForm">
         <form class="formContainer" onsubmit="iniciarSesion()">
           <h1 >Iniciar Sesion</h1>
@@ -119,7 +120,7 @@
                 <input type="text" name="nombre" id="getNombre"  placeholder="Nombre y Apellido" >
 
                 <label for="telefono" style="display: none">Telefono: </label>
-                <input type="text" name="telefono" id="getTelefono" placeholder="11-2158-1234"  >
+                <input type="tel" pattern="[0-9]{10}" name="telefono" id="getTelefono" placeholder="1122223333"  >
 
                 <label for="correo" style="display: none">Correo: </label>
                 <input type="text" name="correo" id="getCorreo" placeholder="CORREO" style="text-transform: none">
@@ -134,6 +135,7 @@
             </div>
 
         </form>
+        
 
     </div>
 
@@ -165,8 +167,8 @@
 
     </footer>
     
-
-    </script>
 </body>
-
+    <script src="iniciar.js"></script>
+    <script src="desplegarNav.js"></script>
+    <script src="contacto.js"></script>
 </html>
