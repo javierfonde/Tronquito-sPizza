@@ -28,6 +28,7 @@ body{
 
 .mainContainer .containerEslogan{
     justify-content: center;
+    display: flex;
     align-items: center;
     padding-bottom: 50px;
 }
@@ -36,6 +37,7 @@ body{
     font-family: ChelseaMarket;
     font-size: 200% ;
     font-weight: normal;
+    text-align: center;
     color:rgb(255, 255, 255);    
 }
 
@@ -45,13 +47,16 @@ body{
     justify-content: center;
 }
 
-.mainContainer .containerCarrusel>img {
-    height: 90%;
-    width: 90%;
+
+.mainContainer .containerCarrusel .imagenCarrusel{
+    display: flex;
+    background-size:cover;
+    width: 100%;
+    margin-inline: 50px;
     border-radius: 10px;
 }
-
-@media (max-width:700px){
+ 
+@media (max-width:1000px){
     .mainContainer .promoContainer{
         margin: 20px;
     }
@@ -63,18 +68,26 @@ body{
 
     .mainContainer .containerEslogan{
         padding-bottom: 10px;
-
     }
     .mainContainer .containerEslogan .eslogan{
         font-size: 1.6rem;
         text-align: center;
+        width: 70%;
     }
 
     .mainContainer .containerCarrusel{
-        height: 300px;
+        height: 50rem;
+        margin-inline: 35px;
+        flex-direction: column;
+        align-items: center;
     }
-    .mainContainer .containerCarrusel>img {
-        height: 80%;
+    .mainContainer .containerCarrusel .imagenCarrusel{
+        display: flex;
+        background-size: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        margin-block: 8px;
+    }
 
-    }
 }
