@@ -118,4 +118,13 @@ body{
     }
 }
 
+@media (max-width:1000px){
+    .mainContainer .localContainer {
+        flex-direction: column;
+    }
+
+    .mainContainer .localContainer .horariosContainer {
+        margin-block-start: 30px;
+    }
+}
 

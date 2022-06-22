@@ -8,3 +8,7 @@
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
+
+<div class="imagenCarrusel"><img src="img/image 9.png" alt="fotoAmasando"></div>
+<div class="imagenCarrusel"><img src="img/image 9.png" alt="fotoPizzaSalsa"></div>
+<div class="imagenCarrusel"><img src="img/image 9.png" alt="fotoPizzaDecora"></div>

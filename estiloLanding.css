@@ -51,11 +51,11 @@ body{
     display: flex;
     background-size:cover;
     width: 100%;
-    margin-inline: 50px;
+    margin-inline: 20px;
     border-radius: 10px;
 }
  
-@media (max-width:1000px){
+@media (max-width:480px){
     .mainContainer .promoContainer{
         margin: 20px;
     }
@@ -89,4 +89,26 @@ body{
         margin-block: 8px;
     }
 
+}
+
+@media (max-width:850px){
+
+    .headerContainerResponsive .containerVisible .containerLogo {
+        width: 15%;
+        height: 15%;
+    
+    }
+
+    .headerContainerResponsive .containerVisible .containerLogo>img {
+        height: 50%;
+    }
+
+    .mainContainer .promoContainer{
+        margin: 20px;
+    }
+    .mainContainer .promoContainer> img {
+        height:auto;
+        width: 100%;
+
+    }
 }
