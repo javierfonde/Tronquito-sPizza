@@ -79,7 +79,7 @@
   font-size: 20px;
 }
 
-@media (max-width:768px){
+@media (max-width:850px){
   #mainFooter .content .redesBox {
     flex-direction: none;
     padding-inline-start: 20px;
@@ -96,11 +96,15 @@
     font-size: 1.5rem;
   }
 
-  #mainFooter .content .logoBox>img {
-    width: 65%;
-    padding: 5px;
-  }
   #mainFooter .copyright .copyrightText {
     font-size: 0.8rem;
   }
 } 
+
+@media (max-width:480px){
+  #mainFooter .content .logoBox>img {
+    
+    width: 65%;
+  }
+
+}

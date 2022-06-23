@@ -266,11 +266,11 @@ header {
 
 @media (max-width:1200px){
     .headerContainer .contentRight .botonInicio .textoInicio {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     .headerContainer .contentLeft nav#Header a {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
 }
