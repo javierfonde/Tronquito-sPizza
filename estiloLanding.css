@@ -93,16 +93,6 @@ body{
 
 @media (max-width:850px){
 
-    .headerContainerResponsive .containerVisible .containerLogo {
-        width: 15%;
-        height: 15%;
-    
-    }
-
-    .headerContainerResponsive .containerVisible .containerLogo>img {
-        height: 50%;
-    }
-
     .mainContainer .promoContainer{
         margin: 20px;
     }
