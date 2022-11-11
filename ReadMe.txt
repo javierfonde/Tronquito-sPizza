@@ -1,14 +1,8 @@
--Pagina responsive
--Bootstrap
--Agregar con javascript que cuando se envie un formulario, aparezca un cartel de alerta de que el formulario fue enviado
--Difuminar fondo de formpopup
+Pagina Desarrollada para materia de Diseño & Desarrollo Web. 
+Se creó un local ficticio de pizzas y se diseño la pagina con Figma para luego 
+desarrollarla con HTML, CSS y javaScript.
 
-
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-
-<div class="imagenCarrusel"><img src="img/image 9.png" alt="fotoAmasando"></div>
-<div class="imagenCarrusel"><img src="img/image 9.png" alt="fotoPizzaSalsa"></div>
-<div class="imagenCarrusel"><img src="img/image 9.png" alt="fotoPizzaDecora"></div>
+En el desarrollo de la página se buscó:
+-Combinación de paleta de colores
+-Diseño responsive
+-Uso de forms, con validaciones y alertas
